@@ -1,0 +1,36 @@
+ul li{
+    cursor: pointer;
+    display: inline;
+}
+
+ul li a{
+    color: blue;
+    text-decoration: none;
+    padding: 25px;
+    transition: all 0.2s ease-in-out;
+    border-color: black;
+}
+
+ul li a:hover{
+    color: white;
+    background-color: rgb(255, 215, 0);
+}
+
+h1{
+    color: white;
+    background-color: darkmagenta;
+    padding: 30px;
+    border-radius: 0 30px 0 30px;
+    border-color: black;
+}
+
+.ultra{
+    color: chocolate;
+}
+.baron{
+    color: lightskyblue;
+}
+
+footer{
+
+}

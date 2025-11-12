@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graduation Gallery</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #000000, #1a1a1a);
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      color: gold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      color: gold;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .gallery-item:hover .overlay {
+      opacity: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #111;
+      color: gray;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎓 Graduation Memories Gallery</h1>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="student1.jpg" alt="Graduating Student">
+      <div class="overlay">Class of 2027</div>
+    </div>
+    <div class="gallery-item">
+      <img src="student2.jpg" alt="Student">
+      <div class="overlay">Proud Moments</div>
+    </div>
+    <div class="gallery-item">
+      <img src="student3.jpg" alt="Celebration">
+      <div class="overlay">Celebration Time</div>
+    </div>
+    <div class="gallery-item">
+      <img src="student4.jpg" alt="Friends">
+      <div class="overlay">Forever Friends</div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Graduation Day | Designed with ❤️
+  </footer>
+
+</body>
+</html>
